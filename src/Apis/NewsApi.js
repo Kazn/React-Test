@@ -15,7 +15,6 @@ export function getNews(keyWord) {
     url = "http://newsapi.org/v2/"+selectedKeylinemoduleKey+keyWord+"&from="+moment(new Date()).format("YYYY-MM-DD")+"&sortBy=popularity&apiKey="+apikey
   }
   let req = service.get(url);
-
   return req;
 }
 
